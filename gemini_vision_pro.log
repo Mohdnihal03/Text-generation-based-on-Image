@@ -1,0 +1,98 @@
+2024-10-25 17:21:31,798 - INFO - gemini_vision - Initializing Gemini Vision
+2024-10-25 17:21:31,798 - INFO - gemini_vision - temperature: 0.3
+2024-10-25 17:21:31,811 - INFO - gemini_vision - top_p: 1
+2024-10-25 17:21:31,811 - INFO - gemini_vision - top_k: 32
+2024-10-25 17:21:31,811 - INFO - gemini_vision - max_output_tokens: 4096
+2024-10-25 17:21:31,811 - INFO - gemini_vision - Gemini Vision configured success
+2024-10-25 17:21:31,811 - INFO - gemini_vision - Setting up model
+2024-10-25 17:21:31,811 - INFO - gemini_vision - Model setup success
+2024-10-25 17:21:43,514 - INFO - gemini_vision - Generating contents
+2024-10-25 17:21:43,514 - INFO - gemini_vision - Contents: ['\n            Analyze this banner image and suggest optimal text placements. Consider:\n            1. Best locations for headlines, subheadings, and body text\n            2. Recommended text styling (size, color, font weight)\n            3. Areas with good contrast for text\n            4. Balanced composition\n            Provide specific placement suggestions with reasoning.\n            ', <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=3768x6698 at 0x27E57897A00>]
+2024-10-25 17:21:47,930 - ERROR - photo-uploader - Error analyzing banner: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+2024-10-25 17:21:47,947 - ERROR - photo-uploader - Traceback (most recent call last):
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 127, in main
+    suggestions = st.session_state['analyzer'].analyze_banner(
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 38, in analyze_banner
+    response = self.gemini.generate_content(image_contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.\libs\gemini_vision.py", line 70, in generate_content
+    return self.model.generate_content(contents=contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+
+2024-10-25 17:22:24,270 - INFO - gemini_vision - Generating contents
+2024-10-25 17:22:24,270 - INFO - gemini_vision - Contents: ['\n            Analyze this banner image and suggest optimal text placements. Consider:\n            1. Best locations for headlines, subheadings, and body text\n            2. Recommended text styling (size, color, font weight)\n            3. Areas with good contrast for text\n            4. Balanced composition\n            Provide specific placement suggestions with reasoning.\n            ', <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=3768x6698 at 0x27E579EC9D0>]
+2024-10-25 17:22:26,093 - ERROR - photo-uploader - Error analyzing banner: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+2024-10-25 17:22:26,108 - ERROR - photo-uploader - Traceback (most recent call last):
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 127, in main
+    suggestions = st.session_state['analyzer'].analyze_banner(
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 38, in analyze_banner
+    response = self.gemini.generate_content(image_contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.\libs\gemini_vision.py", line 70, in generate_content
+    return self.model.generate_content(contents=contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+
+2024-10-25 17:24:47,240 - INFO - gemini_vision - Generating contents
+2024-10-25 17:24:47,240 - INFO - gemini_vision - Contents: ['\n            Analyze this banner image and suggest optimal text placements. Consider:\n            1. Best locations for headlines, subheadings, and body text\n            2. Recommended text styling (size, color, font weight)\n            3. Areas with good contrast for text\n            4. Balanced composition\n            Provide specific placement suggestions with reasoning.\n            ', <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=3768x6698 at 0x27E579EC910>]
+2024-10-25 17:24:49,244 - ERROR - photo-uploader - Error analyzing banner: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+2024-10-25 17:24:49,262 - ERROR - photo-uploader - Traceback (most recent call last):
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 127, in main
+    suggestions = st.session_state['analyzer'].analyze_banner(
+  File "C:\Users\nihall\Desktop\Photo-Placement\photo-uploader.py", line 38, in analyze_banner
+    response = self.gemini.generate_content(image_contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.\libs\gemini_vision.py", line 70, in generate_content
+    return self.model.generate_content(contents=contents)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\generativeai\generative_models.py", line 243, in generate_content
+    response = self._client.generate_content(request)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 566, in generate_content
+    response = rpc(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\nihall\Desktop\Photo-Placement\.enver\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 Gemini 1.0 Pro Vision has been deprecated on July 12, 2024. Consider switching to different model, for example gemini-1.5-flash.
+
